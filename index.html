@@ -4,22 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Code secret</title>
+
 <style>
-body{background:#111;color:white;font-family:Arial;text-align:center;padding-top:80px}
-input{font-size:30px;padding:15px;width:220px;text-align:center;border-radius:12px}
-button{font-size:20px;padding:15px 35px;margin-top:15px;border-radius:12px}
-#result{font-size:50px;font-weight:bold;margin-top:40px}
+body{
+  background:#111;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+  padding-top:80px;
+}
+
+input{
+  font-size:30px;
+  padding:15px;
+  width:220px;
+  text-align:center;
+  border-radius:12px;
+}
+
+button{
+  font-size:20px;
+  padding:15px 35px;
+  margin-top:15px;
+  border-radius:12px;
+}
+
+#result{
+  font-size:50px;
+  font-weight:bold;
+  margin-top:40px;
+}
 </style>
+
 </head>
+
 <body>
 
 <h1>🔐 CODE SECRET</h1>
 
-<input id="code"
-       type="text"
-       autocomplete="off"
-       autocapitalize="characters"
-       placeholder="Code ou mot">
+<input
+  id="code"
+  type="text"
+  autocomplete="off"
+  autocapitalize="characters"
+  placeholder="Code ou mot"
+>
 
 <br>
 
@@ -31,7 +60,11 @@ button{font-size:20px;padding:15px 35px;margin-top:15px;border-radius:12px}
 
 function check(){
 
-  const saisie = document.getElementById("code").value.trim().toUpperCase();
+  const saisie = document
+    .getElementById("code")
+    .value
+    .trim()
+    .toUpperCase();
 
   const reponses = {
 
@@ -53,10 +86,13 @@ function check(){
 
   }else{
 
-    document.getElementById("result").innerHTML = "❌ Réponse incorrecte";
+    document.getElementById("result").innerHTML =
+      "❌ Réponse incorrecte";
 
-  
-  
+  }
+
+}
+
 </script>
 
 </body>
