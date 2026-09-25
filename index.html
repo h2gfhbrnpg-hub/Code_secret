@@ -25,10 +25,21 @@ button{font-size:20px;padding:15px 35px;margin-top:15px;border-radius:12px}
 
 <script>
 function check(){
-  if(document.getElementById("code").value=="7429"){
-    document.getElementById("result").innerHTML="USA🇺🇸";
+
+  const code = document.getElementById("code").value;
+
+  const mots = {
+    "2412": "ELLIS",
+    "0601": "SARAH",
+    "0902": "INGRID",
+    "1212": "LIA & JULES",
+    "1302": "tibow"
+  };
+
+  if(mots[code]){
+    document.getElementById("result").innerHTML = mots[code];
   }else{
-    document.getElementById("result").innerHTML="❌ Code incorrect"; 
+    document.getElementById("result").innerHTML = "❌ Code incorrect";
   }
 }
 </script>
